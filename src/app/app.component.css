@@ -1,0 +1,22 @@
+.drawer-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #eee;
+}
+.mat-drawer {
+  width: 15%;
+}
+.logo {
+  width: 130px;
+  height: 53px;
+  text-align: left;
+  /* padding-right: 40px; */
+  margin: 0 40px 0 3px;
+}
+.button-padding-right{
+  padding-right:5px;
+}
+.list-centered {
+  text-align: center;
+}

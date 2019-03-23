@@ -1,0 +1,101 @@
+<mat-toolbar color="primary">
+    <div>
+        <img src="src\images\bullhorn_logo.png" class="logo">
+        </div>
+    <span>
+        <button mat-icon-button color="accent" (click)="sidenav.toggle()" class="button-padding-right">
+        <i class="material-icons">
+            menu
+        </i>
+        </button>
+    </span>
+    <span>
+        My Workspace
+    </span>
+</mat-toolbar>
+<mat-sidenav-container class="drawer-container">
+    <mat-sidenav #sidenav mode="side" opened class="mat-drawer">
+        <mat-nav-list class="list-centered">
+            <button mat-flat-button (click)="sidenav.toggle()">
+                Contact Support
+            </button>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-workspace-dash></app-workspace-dash>
+        <!-- <mat-grid-list cols="3" gutterSize="5px" rowHeight="2:1">
+            <mat-grid-tile>
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>
+                                Angular Component
+                            </mat-card-title>
+                            <mat-card-subtitle>
+                                Learning ng g c
+                            </mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-lg-image class="card-image" src="src\images\angular_component.png"  alt="Angular Component Image">
+                       <mat-card-content>
+                           <p>
+                            <app-auto-refresh></app-auto-refresh>
+                        </p>
+                       </mat-card-content>
+                    </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                    <mat-card>
+                            <mat-card-header>
+                                <mat-card-title>
+                                    Angular Component
+                                </mat-card-title>
+                                <mat-card-subtitle>
+                                    Learning ng g c
+                                </mat-card-subtitle>
+                            </mat-card-header>
+                            <img mat-card-sm-image class="card-image" src="src\images\angular_component.png"  alt="Angular Component Image">
+                           <mat-card-content>
+                               <p>
+                                <app-auto-refresh></app-auto-refresh>
+                            </p>
+                           </mat-card-content>
+                        </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                    <mat-card>
+                            <mat-card-header>
+                                <mat-card-title>
+                                    Angular Component
+                                </mat-card-title>
+                                <mat-card-subtitle>
+                                    Learning ng g c
+                                </mat-card-subtitle>
+                            </mat-card-header>
+                            <img mat-card-sm-image class="card-image" src="src\images\angular_component.png"  alt="Angular Component Image">
+                           <mat-card-content>
+                               <p>
+                                <app-auto-refresh></app-auto-refresh>
+                            </p>
+                           </mat-card-content>
+                        </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                    <mat-card>
+                            <mat-card-header>
+                                <mat-card-title>
+                                    Angular Component
+                                </mat-card-title>
+                                <mat-card-subtitle>
+                                    Learning ng g c
+                                </mat-card-subtitle>
+                            </mat-card-header>
+                            <img mat-card-sm-image class="card-image" src="src\images\angular_component.png"  alt="Angular Component Image">
+                           <mat-card-content>
+                               <p>
+                                <app-auto-refresh></app-auto-refresh>
+                            </p>
+                           </mat-card-content>
+                        </mat-card>
+            </mat-grid-tile>
+        </mat-grid-list> -->
+    </mat-sidenav-content> 
+</mat-sidenav-container>

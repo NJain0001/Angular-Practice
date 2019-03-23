@@ -1,0 +1,28 @@
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+$custom-bh-blue-color : (50: #e4e5e9,100 : #bcbfc7,200 : #9094a2,300 : #63697d,400 : #414961,500 : #202945,600 : #1c243e,700 : #181f36,800 : #13192e,900 : #0b0f1f,A100 : #5f76ff,A200 : #2c4aff,A400 : #0023f8,A700 : #0020df,contrast: (50 : #000000,100 : #000000,200 : #000000,300 : #000000,400 : #000000,500 : #ffffff,600 : #ffffff,700 : #ffffff,800 : #ffffff,900 : #ffffff,A100 : #000000,A200 : #000000,A400 : #000000,A700 : #000000));
+
+$custom-bh-orange-color: (50 : #ffede0,100 : #ffd2b3,200 : #ffb480,300 : #ff964d,400 : #ff8026,500 : #ff6900,600 : #ff6100,700 : #ff5600,800 : #ff4c00,900 : #ff3b00,A100 : #ffffff,A200 : #fff4f2,A400 : #ffcabf,A700 : #ffb5a6,contrast: (50 : #000000,100 : #000000,200 : #000000,300 : #000000,400 : #000000,500 : #ffffff,600 : #ffffff,700 : #ffffff,800 : #ffffff,900 : #ffffff,A100 : #000000,A200 : #000000,A400 : #000000,A700 : #000000));
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$bh-app-primary: mat-palette($custom-bh-blue-color, 500, A100, 700);
+$bh-app-accent:  mat-palette($custom-bh-orange-color);
+
+// The warn palette is optional (defaults to red).
+$bh-app-warn:    mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$bh-app-theme: mat-light-theme($bh-app-primary, $bh-app-accent, $bh-app-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($bh-app-theme);
